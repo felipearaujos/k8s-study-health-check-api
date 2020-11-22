@@ -38,6 +38,8 @@ defmodule HelthCheckApiWeb.Endpoint do
     pass: ["*/*"],
     json_decoder: Phoenix.json_library()
 
+  plug HelthCheckApiWeb.Plugs.HealthCheck
+
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
