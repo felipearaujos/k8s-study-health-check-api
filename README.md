@@ -1,5 +1,13 @@
 # HelthCheckApi
 
+
+```sh
+docker build -t araujo/health-check . --no-cache
+docker run -d --name agr_vai -p 4000:4000 araujo/health-check
+```
+
+
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
