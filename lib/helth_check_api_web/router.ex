@@ -1,11 +1,11 @@
-defmodule HelthCheckApiWeb.Router do
-  use HelthCheckApiWeb, :router
+defmodule HealthCheckApiWeb.Router do
+  use HealthCheckApiWeb, :router
 
   pipeline :api do
     plug :accepts, ["json"]
   end
 
-  scope "/api", HelthCheckApiWeb do
+  scope "/api", HealthCheckApiWeb do
     pipe_through :api
   end
 end

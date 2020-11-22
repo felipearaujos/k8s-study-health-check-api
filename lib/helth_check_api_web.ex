@@ -1,12 +1,12 @@
-defmodule HelthCheckApiWeb do
+defmodule HealthCheckApiWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use HelthCheckApiWeb, :controller
-      use HelthCheckApiWeb, :view
+      use HealthCheckApiWeb, :controller
+      use HealthCheckApiWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,26 +19,26 @@ defmodule HelthCheckApiWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: HelthCheckApiWeb
+      use Phoenix.Controller, namespace: HealthCheckApiWeb
 
       import Plug.Conn
-      import HelthCheckApiWeb.Gettext
-      alias HelthCheckApiWeb.Router.Helpers, as: Routes
+      import HealthCheckApiWeb.Gettext
+      alias HealthCheckApiWeb.Router.Helpers, as: Routes
     end
   end
 
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/helth_check_api_web/templates",
-        namespace: HelthCheckApiWeb
+        root: "lib/health_check_api_web/templates",
+        namespace: HealthCheckApiWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
 
-      import HelthCheckApiWeb.ErrorHelpers
-      import HelthCheckApiWeb.Gettext
-      alias HelthCheckApiWeb.Router.Helpers, as: Routes
+      import HealthCheckApiWeb.ErrorHelpers
+      import HealthCheckApiWeb.Gettext
+      alias HealthCheckApiWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -53,7 +53,7 @@ defmodule HelthCheckApiWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import HelthCheckApiWeb.Gettext
+      import HealthCheckApiWeb.Gettext
     end
   end
 

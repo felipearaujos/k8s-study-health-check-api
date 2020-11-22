@@ -1,6 +1,6 @@
-defmodule HelthCheckApi do
+defmodule HealthCheckApi do
   @moduledoc """
-  HelthCheckApi keeps the contexts that define your domain
+  HealthCheckApi keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

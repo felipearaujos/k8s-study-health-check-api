@@ -1,5 +1,5 @@
-defmodule HelthCheckApiWeb.ErrorView do
-  use HelthCheckApiWeb, :view
+defmodule HealthCheckApiWeb.ErrorView do
+  use HealthCheckApiWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

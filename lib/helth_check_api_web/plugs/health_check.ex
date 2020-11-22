@@ -1,4 +1,4 @@
-defmodule HelthCheckApiWeb.Plugs.HealthCheck do
+defmodule HealthCheckApiWeb.Plugs.HealthCheck do
   @moduledoc """
   This checks the application's availability.
   """

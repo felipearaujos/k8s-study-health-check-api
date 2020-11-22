@@ -8,11 +8,11 @@
 use Mix.Config
 
 # Configures the endpoint
-config :helth_check_api, HelthCheckApiWeb.Endpoint,
+config :health_check_api, HealthCheckApiWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "qKnZ1jxPWrzRZX5cPLXZ3+nmcnVljSBKuAJhvn4GJFYMnZxQnJRFxDPxId84D6la",
-  render_errors: [view: HelthCheckApiWeb.ErrorView, accepts: ~w(json)],
-  pubsub: [name: HelthCheckApi.PubSub, adapter: Phoenix.PubSub.PG2],
+  render_errors: [view: HealthCheckApiWeb.ErrorView, accepts: ~w(json)],
+  pubsub: [name: HealthCheckApi.PubSub, adapter: Phoenix.PubSub.PG2],
   live_view: [signing_salt: "9kB2EIYA"]
 
 # Configures Elixir's Logger

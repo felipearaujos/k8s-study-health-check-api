@@ -1,15 +1,17 @@
-defmodule HelthCheckApiWeb.ErrorViewTest do
-  use HelthCheckApiWeb.ConnCase, async: true
+defmodule HealthCheckApiWeb.ErrorViewTest do
+  use HealthCheckApiWeb.ConnCase, async: true
 
   # Bring render/3 and render_to_string/3 for testing custom views
   import Phoenix.View
 
   test "renders 404.json" do
-    assert render(HelthCheckApiWeb.ErrorView, "404.json", []) == %{errors: %{detail: "Not Found"}}
+    assert render(HealthCheckApiWeb.ErrorView, "404.json", []) == %{
+             errors: %{detail: "Not Found"}
+           }
   end
 
   test "renders 500.json" do
-    assert render(HelthCheckApiWeb.ErrorView, "500.json", []) ==
+    assert render(HealthCheckApiWeb.ErrorView, "500.json", []) ==
              %{errors: %{detail: "Internal Server Error"}}
   end
 end

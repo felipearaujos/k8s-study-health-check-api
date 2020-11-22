@@ -1,11 +1,11 @@
-defmodule HelthCheckApiWeb.Gettext do
+defmodule HealthCheckApiWeb.Gettext do
   @moduledoc """
   A module providing Internationalization with a gettext-based API.
 
   By using [Gettext](https://hexdocs.pm/gettext),
   your module gains a set of macros for translations, for example:
 
-      import HelthCheckApiWeb.Gettext
+      import HealthCheckApiWeb.Gettext
 
       # Simple translation
       gettext("Here is the string to translate")
@@ -20,5 +20,5 @@ defmodule HelthCheckApiWeb.Gettext do
 
   See the [Gettext Docs](https://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :helth_check_api
+  use Gettext, otp_app: :health_check_api
 end

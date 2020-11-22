@@ -1,5 +1,5 @@
 use Mix.Config
 
-config :helth_check_api, HelthCheckApiWeb.Endpoint, server: true
+config :health_check_api, HealthCheckApiWeb.Endpoint, server: true
 
 config :logger, level: :info

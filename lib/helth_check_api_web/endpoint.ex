@@ -1,16 +1,16 @@
-defmodule HelthCheckApiWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :helth_check_api
+defmodule HealthCheckApiWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :health_check_api
 
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
   @session_options [
     store: :cookie,
-    key: "_helth_check_api_key",
+    key: "_health_check_api_key",
     signing_salt: "4x6IbzM5"
   ]
 
-  socket "/socket", HelthCheckApiWeb.UserSocket,
+  socket "/socket", HealthCheckApiWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -20,7 +20,7 @@ defmodule HelthCheckApiWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
-    from: :helth_check_api,
+    from: :health_check_api,
     gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
@@ -38,10 +38,10 @@ defmodule HelthCheckApiWeb.Endpoint do
     pass: ["*/*"],
     json_decoder: Phoenix.json_library()
 
-  plug HelthCheckApiWeb.Plugs.HealthCheck
+  plug HealthCheckApiWeb.Plugs.HealthCheck
 
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug HelthCheckApiWeb.Router
+  plug HealthCheckApiWeb.Router
 end
