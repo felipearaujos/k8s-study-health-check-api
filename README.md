@@ -4,21 +4,21 @@ Just some samples to create a dockerfile and healthcheck plug
 
 ## Docker
 
-- docker build -t felipearaujos/health-check . --no-cache
-- docker run -d --name health-check-api -p 4000:4000 felipearaujos/health-check
-- docker push felipearaujos/health-check:latest
+- `docker build -t felipearaujos/health-check . --no-cache`
+- `docker run -d --name health-check-api -p 4000:4000 felipearaujos/health-check`
+- `docker push felipearaujos/health-check:latest`
 
 ## Minikube
 
-- minikube start
-- minikube kubectl -- get pods
-- minikube addons enable ingress
-- minikube dashboard
+- `minikube start`
+- `minikube kubectl -- get pods`
+- `minikube addons enable ingress`
+- `minikube dashboard`
 
 ## Kubect
-- kubectl cluster-inf
-- kubectl config use-context minikube
-- kubectl logs pod-name
+- `kubectl cluster-inf`
+- `kubectl config use-context minikube`
+- `kubectl logs pod-name`
 
 ## Helm
 
@@ -37,10 +37,12 @@ Just some samples to create a dockerfile and healthcheck plug
 - k8s -> running locally using minikube
 - docker-hub -> when the API image is published
 
+
+## Steps
 - Pack api in a image
 - Publish to docker-hub
 - Create helm chart
 - Configs and image repo
-- Deploy to k8s cluster using helm
+- Deploy to running k8s on minukube using helm install
 
 
