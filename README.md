@@ -22,13 +22,12 @@ Just some samples to create a dockerfile and healthcheck plug
 
 ## Helm
 
-- helm create mychartname
-- cd mychartname
-- helm create buildachart
-- ls buildachart/
-- helm install my-cherry-chart buildachart/ --values buildachart/values.yaml
-- helm uninstall my-cherry
-- helm upgrade buildachart/ --values buildachart/values.yaml
+- `helm create buildachart`
+
+- `ls buildachart/`
+- `helm install my-cherry-chart buildachart/ --values buildachart/values.yaml`
+- `helm uninstall my-cherry`
+- `helm upgrade buildachart/ --values buildachart/values.yaml`
 
 
 
