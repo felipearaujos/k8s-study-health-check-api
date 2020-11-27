@@ -28,7 +28,7 @@ Just some samples to create a dockerfile and healthcheck plug
 - ls buildachart/
 - helm install my-cherry-chart buildachart/ --values buildachart/values.yaml
 - helm uninstall my-cherry
-- helm install remove buildachart/ --values buildachart/values.yaml
+- helm upgrade buildachart/ --values buildachart/values.yaml
 
 
 
