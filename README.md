@@ -38,3 +38,10 @@ Just some samples to create a dockerfile and healthcheck plug
 - k8s -> running locally using minikube
 - docker-hub -> when the API image is published
 
+- Pack api in a image
+- Publish to docker-hub
+- Create helm chart
+- Configs and image repo
+- Deploy to k8s cluster using helm
+
+
