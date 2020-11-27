@@ -10,11 +10,15 @@ Just some samples to create a dockerfile and healthcheck plug
 
 ## Minikube
 
-- kubectl config use-context minikube
 - minikube start
 - minikube kubectl -- get pods
 - minikube addons enable ingress
 - minikube dashboard
+
+## Kubect
+- kubectl cluster-inf
+- kubectl config use-context minikube
+- kubectl logs pod-name
 
 ## Helm
 
