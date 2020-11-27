@@ -2,13 +2,13 @@
 Just some samples to create a dockerfile and healthcheck plug
 
 
-# Docker
+## Docker
 
 - docker build -t felipearaujos/health-check . --no-cache
 - docker run -d --name health-check-api -p 4000:4000 felipearaujos/health-check
 - docker push felipearaujos/health-check:latest
 
-# Minikube
+## Minikube
 
 - kubectl config use-context minikube
 - minikube start
@@ -16,7 +16,7 @@ Just some samples to create a dockerfile and healthcheck plug
 - minikube addons enable ingress
 - minikube dashboard
 
-# Helm
+## Helm
 
 - helm create mychartname
 - cd mychartname
