@@ -29,8 +29,8 @@ Just some samples to create a dockerfile and healthcheck plug
 
 
 # What is this?
-API -> A simple elixir image to be used as application to deploy
-araujo-org-chart -> helm chart to facilitate k8s depoloyment -> Helm is a package manager for Kubernetes
-k8s -> running locally using minikube
-docker-hub -> when the API image is published
+- API -> A simple elixir image to be used as application to deploy
+- araujo-org-chart -> helm chart to facilitate k8s depoloyment -> Helm is a package manager for Kubernetes
+- k8s -> running locally using minikube
+- docker-hub -> when the API image is published
 
