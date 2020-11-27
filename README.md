@@ -25,3 +25,8 @@ Just some samples to create a dockerfile and healthcheck plug
 - helm install my-cherry-chart buildachart/ --values buildachart/values.yaml
 - helm uninstall my-cherry
 - helm install remove buildachart/ --values buildachart/values.yaml
+
+
+
+# What is this?
+API -> A simple elixir image to be used as application to deploy
