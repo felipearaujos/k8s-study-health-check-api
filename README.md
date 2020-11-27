@@ -1,4 +1,4 @@
-# k8s-study-health-check
+# k8s-study-health-check-api
 Just some samples to create a dockerfile and healthcheck plug
 
 
